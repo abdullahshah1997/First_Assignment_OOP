@@ -21,8 +21,8 @@ public class PlantMain {
 
         String chosenPlant = (String) JOptionPane.showInputDialog(
                 null,
-                "Vilken planta ska vattnas?",
-                "Bevattningsprogram",
+                "Vilken växt ska få mat?",
+                "Näringsprogram",
                 JOptionPane.QUESTION_MESSAGE,
                 null,
                 plantArray,
@@ -30,7 +30,7 @@ public class PlantMain {
 
         //Här är polymorfismen
         for(Plant plant:plantList)
-        if(chosenPlant.equalsIgnoreCase(plant.getName()))
+            if(chosenPlant.equalsIgnoreCase(plant.getName()))
             JOptionPane.showMessageDialog(null,plant.foodAmount());
 
 
