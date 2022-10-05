@@ -11,8 +11,9 @@ public class Carnivore extends Plant{
         baseLevel = 0.1;
         addedFood = 0.2;
     }
+    //Här används interfacet
     public String foodAmount(){
         return "Den köttätande växten " + this.getName() + " behöver " +
-                (baseLevel + (addedFood*this.getLength())) + " liter " + this.foodType(new Carnivore()) + " per dag";
+                (baseLevel + (addedFood*this.getLength())) + " liter " + FoodTypeEnum.PROTEINSHAKE.toLowerCase + " per dag";
     }
 }

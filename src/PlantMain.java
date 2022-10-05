@@ -1,14 +1,16 @@
 import javax.swing.*;
 import java.util.ArrayList;
 public class PlantMain {
+
+
     public static void main(String[] args) {
         Plant palm = new Palm(5, "Laura");
-        Plant palm2 = new Palm(1, "Putte");
+        Plant palmTwo = new Palm(1, "Putte");
         Plant cactus = new Cactus(0.2,"Igge");
         Plant carnivore = new Carnivore (0.7,"Meatloaf");
         ArrayList<Plant> plantList = new ArrayList<>();
         plantList.add(palm);
-        plantList.add(palm2);
+        plantList.add(palmTwo);
         plantList.add(cactus);
         plantList.add(carnivore);
         String[] plantArray = new String[5];
