@@ -6,7 +6,7 @@ public class Cactus extends Plant{
     }
 
     public double foodAmount() {
-        return 0.2;
+        return 0.02;
     }
 
     public String foodMessage(){
