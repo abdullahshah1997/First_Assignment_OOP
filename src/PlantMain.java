@@ -29,9 +29,9 @@ public class PlantMain {
                 plantArray[0]);
 
         //Här är polymorfismen
-        for(Plant plant:plantList)
+        for(PlantInterface plant:plantList)
             if(chosenPlant.equalsIgnoreCase(plant.getName()))
-            JOptionPane.showMessageDialog(null,plant.foodAmount());
+            JOptionPane.showMessageDialog(null,plant.foodMessage());
 
 
         }

@@ -6,8 +6,13 @@ public class Palm extends Plant {
 
         super(length, name);
     }
-    public String foodAmount() {
-        return "Palmen " + this.getName() + " behöver " + (this.getLength() * 0.5) + " liter " +
+
+    public double foodAmount() {
+        return this.getLength() * 0.5;
+    }
+
+    public String foodMessage() {
+        return "Palmen " + this.getName() + " behöver " + foodAmount() + " liter " +
                 FoodTypeEnum.TAPWATER.toLowerCase + " per dag.";
 
     }

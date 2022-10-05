@@ -1,3 +1,5 @@
 public interface PlantInterface {
-    String foodAmount();
-    }
+
+    String getName();
+    String foodMessage();
+}
