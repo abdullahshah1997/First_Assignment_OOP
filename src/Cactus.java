@@ -10,7 +10,7 @@ public class Cactus extends Plant{
         return 0.02;
     }
 
-    //Nyttjar enum nedan.
+    //Nyttjar enum nedan samt implementerar metoden från interface.
     public String foodMessage(){
         return "Kaktusen " + this.getName() + " behöver "+foodAmount()+" liter " +
                 FoodTypeEnum.ENRICHEDWATER.toLowerCase + " per dag";

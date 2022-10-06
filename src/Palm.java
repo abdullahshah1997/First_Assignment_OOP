@@ -11,7 +11,7 @@ public class Palm extends Plant {
     public double foodAmount() {
         return this.getLength() * 0.5;
     }
-    //Nyttjar enum nedan.
+    //Nyttjar enum nedan samt implementerar metoden från interface.
     public String foodMessage() {
         return "Palmen " + this.getName() + " behöver " + foodAmount() + " liter " +
                 FoodTypeEnum.TAPWATER.toLowerCase + " per dag.";

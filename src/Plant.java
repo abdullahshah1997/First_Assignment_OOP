@@ -15,6 +15,8 @@ public abstract class Plant implements PlantInterface{
     public double getLength() {
         return length;
     }
+
+    //Här implementeras metoden från interface.
     public String getName() {
         return name;
     }

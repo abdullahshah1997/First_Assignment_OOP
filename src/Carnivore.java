@@ -12,12 +12,11 @@ public class Carnivore extends Plant{
         baseLevel = 0.1;
         addedFood = 0.2;
     }
-    //Här används interfacet
 
     public double foodAmount(){
         return baseLevel + (addedFood*this.getLength());
     }
-    //Nyttjar enum nedan.
+    //Nyttjar enum nedan samt implementerar metoden från interface.
     public String foodMessage(){
         return "Den köttätande växten " + this.getName() + " behöver " +
                 foodAmount() + " liter " + FoodTypeEnum.PROTEINSHAKE.toLowerCase + " per dag";
