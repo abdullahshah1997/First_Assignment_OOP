@@ -1,4 +1,6 @@
+//Här implementeras interfacet
 public abstract class Plant implements PlantInterface{
+    //Inkapsling med privata variabler och en konstruktor samt getters.
     private double length;
     private String name;
     public Plant(){

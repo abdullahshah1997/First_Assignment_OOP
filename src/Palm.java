@@ -1,3 +1,4 @@
+//Här sker arv
 public class Palm extends Plant {
 
     public Palm(){}
@@ -10,7 +11,7 @@ public class Palm extends Plant {
     public double foodAmount() {
         return this.getLength() * 0.5;
     }
-
+    //Nyttjar enum nedan.
     public String foodMessage() {
         return "Palmen " + this.getName() + " behöver " + foodAmount() + " liter " +
                 FoodTypeEnum.TAPWATER.toLowerCase + " per dag.";

@@ -1,3 +1,4 @@
+//Här sker arv
 public class Cactus extends Plant{
 
     public Cactus(){}
@@ -9,6 +10,7 @@ public class Cactus extends Plant{
         return 0.02;
     }
 
+    //Nyttjar enum nedan.
     public String foodMessage(){
         return "Kaktusen " + this.getName() + " behöver "+foodAmount()+" liter " +
                 FoodTypeEnum.ENRICHEDWATER.toLowerCase + " per dag";

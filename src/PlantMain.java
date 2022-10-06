@@ -28,7 +28,7 @@ public class PlantMain {
                 plantArray,
                 plantArray[0]);
 
-        //Här är polymorfismen
+        //Här är polymorfismen, nyttjar också interfacet här.
         for(PlantInterface plant:plantList)
             if(chosenPlant.equalsIgnoreCase(plant.getName()))
             JOptionPane.showMessageDialog(null,plant.foodMessage());

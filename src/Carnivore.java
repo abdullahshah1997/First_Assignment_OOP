@@ -1,3 +1,4 @@
+//Här sker arv
 public class Carnivore extends Plant{
     private double baseLevel;
     private double addedFood;
@@ -16,6 +17,7 @@ public class Carnivore extends Plant{
     public double foodAmount(){
         return baseLevel + (addedFood*this.getLength());
     }
+    //Nyttjar enum nedan.
     public String foodMessage(){
         return "Den köttätande växten " + this.getName() + " behöver " +
                 foodAmount() + " liter " + FoodTypeEnum.PROTEINSHAKE.toLowerCase + " per dag";
