@@ -6,7 +6,7 @@ public abstract class Plant implements PlantInterface{
     public Plant(){
 
     }
-    protected String plantType = this.getClass().getName();
+
     public Plant(double length, String name) {
         this.length = length;
         this.name = name;
